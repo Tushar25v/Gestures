@@ -126,7 +126,7 @@ class AppMain:
         self.cap_width = self.tk.config["classifier"]["width"]
         self.cap_height = self.tk.config["classifier"]["height"]
 
-        self.use_static_image_mode = self.tk.config["classifier"]["use_static_image_mode"] == "True"
+        self.use_static_image_mode = bool(self.tk.config["classifier"]["use_static_image_mode"])
         self.min_detection_confidence = self.tk.config["classifier"]["min_detection_confidence"]
         self.min_tracking_confidence = self.tk.config["classifier"]["min_tracking_confidence"]
         self.use_brect = True

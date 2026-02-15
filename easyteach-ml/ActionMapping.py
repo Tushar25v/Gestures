@@ -20,7 +20,7 @@ class ActionMapping:
         self.altTabIsPressed = False
         self.count = 0
         self.action_labels = action_labels
-        print ("labels: " , self.action_labels)
+        print("labels:", self.action_labels)
 
     def reset(self):
         self.count += 1
